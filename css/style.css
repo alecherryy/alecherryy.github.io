@@ -31,10 +31,12 @@ body {
   body.no-scroll {
     overflow-y: hidden; }
 
+main {
+  overflow-x: hidden; }
+
 .l-constrain {
   max-width: 1400px;
-  margin: auto;
-  padding: 0 1em; }
+  margin: auto; }
   @media only screen and (min-width: 700px) {
     .l-constrain {
       padding: 0 2em; } }
@@ -597,7 +599,7 @@ span {
   .section-work__project p {
     font-family: "Lato", sans-serif;
     font-size: 14px;
-    font-weight: 100;
+    font-weight: 300;
     line-height: 18.62px;
     margin-top: 1em; }
 
@@ -695,7 +697,7 @@ span {
   .section-resume__item p {
     font-family: "Lato", sans-serif;
     font-size: 14px;
-    font-weight: 100;
+    font-weight: 300;
     line-height: 18.62px;
     margin-top: 1em; }
 
