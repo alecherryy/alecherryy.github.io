@@ -1,0 +1,66 @@
+.slide-left {
+  
+  @media only screen and (min-width: 700px) {
+    animation: slideIn;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.375, 0.82, 0.165, 1);
+    animation-duration: 2s;
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-right {
+  animation: slideIn;
+  animation-delay: .2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1s;
+  opacity: 0;
+  transform: translateX(50%);
+}
+
+.line {
+  animation: lineUp;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1s;
+  display: none;
+
+  @media only screen and (min-width: 700px) {
+    display: block;
+  }
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes lineUp {
+  to {
+    height: 100%;
+  }
+}
+
+.slide-right--delay {
+  animation-delay: .5s;
+}
+
+[data-aos="draw"] {
+  height: 0;
+  transition-property: height;
+  &.aos-animate {
+    height: 100%;
+  }
+}

@@ -13,143 +13,84 @@
 </head>
 
 <body>
-	<nav style="display: none;">
-		<ul>
-			<li><a>work</a></li>
-			<li><a>about</a></li>
-			<li><a>contact</a></li>
-		</ul>
+	<nav class="menu--mobile">
+		<a href="/index.html" class="logo__link">alecherryy.</a>
+		<span class="menu__icon logo__link">menu.</span>
+		<div class="menu__wrapper">
+			<span class="menu__icon--close logo__link">close.</span>
+			<ul class="menu menu--main">
+				<li class="menu__item"><a href="/index.html#work" class="menu__link">work.</a></li>
+				<li class="menu__item"><a href="/experience.html" class="menu__link">experience.</a></li>
+				<li class="menu__item"><a href="/index.html#contact" class="menu__link">contact.</a></li>
+			</ul>
+		</div>
 	</nav>
+	<div class="l-header__wrapper">
+		<header class="l-header">
+		<a href="/index.html" class="logo__link">alecherryy.</a>
+		<ul class="menu menu--main">
+			<li class="menu__item"><a href="/index.html#work" class="menu__link">work.</a></li>
+			<li class="menu__item"><a href="/index.html#experience" class="menu__link">experience.</a></li>
+			<li class="menu__item"><a href="/index.html#contact" class="menu__link">contact.</a></li>
+		</ul>
+	</header>
+	</div>
 	<main>
-		<section class="section section-intro">
+		<section class="section intro">
 			<div class="l-constrain">
-				<div class="section-intro__inner">
-					<div class="section-intro__top">
-						<h1 class="section-intro__title slide-left">Hello.</h1>
-						<h2 class="section-intro__subtitle">alecherryy |<br>
-						front end developer</h2>
-					</div>
-					<div class="section-intro__bottom">
-						<div class="section-intro__project left slide-right">
-							<div class="line"></div>
-							<h3 class="section-intro__project--title"><a class="section-intro__link" href="osmosis.html">Osmosis</a></h3>
-							<span>Bootstrap</span>
-							<p>Project Hope launched a company wide rebranding earlier in 2018, which prompted them to approach Forum One and task them to redesign and implement their new official website. Forum One assembled a team of 8 member to handle all aspects of the project.</p>
-						</div>
-						<div class="section-intro__project slide-right slide-right--delay">
-							<h3 class="section-intro__project--title"><a class="section-intro__link" href="mercenary-bartender.html">Mercenary Bartender</a></h3>
-							<span>Flexbox</span>
-							<p>The Colorado Department of Public Health, Women Infant and Children is one of Forum One’s larger and more complicated projects. Part of our government work, we had to deliver a multilingual, accessible website in Drupal 8.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="section-intro__brand"  data-aos="fade-in" data-aos-duration="1000" data-aos-easing="ease-in">
-			<div class="section-intro__logo">alecherry Logo</div>
+				<h1 class="intro__title">alecherryy</h1>
+				<h2 class="intro__subtitle">front end developer</h2>
+				<p class="intro__text">Hello, my name is Alessia and I am a developer based out of Seattle. Currently I work full time at digital agency, Forum One. I am always on the lookout for exciting new projects.</p>
 			</div>
 		</section>
-		<section id="work" class="section section-work">
+		<section id="work" class="section work">
+			<div class="work__inner">
+				<a href="project-hope.html" class="work__link">
+					<div class="work__item" style="background-image: url('/images/phope/phope.png'); background-size: 263px 129px;">
+						<h3 class="work__title">Project Hope</h3>
+					</div>
+				</a>
+				<a href="/mopop.html" class="work__link">
+					<div class="work__item" style="background-image: url('/images/mopop/feature-img.png'); background-size: contain;">
+						<h3 class="work__title">Museum of Pop Culture</h3>
+					</div>
+				</a>
+				<a href="/coloradowic.html" class="work__link">
+					<div class="work__item" style="background-image: url('/images/colorado/colorado-wic.jpg'); background-size: cover;">
+						<h3 class="work__title">Colorado WIC</h3>
+					</div>
+				</a>
+				<a href="/coloradowic.html" class="work__link">
+					<div class="work__item" style="background-image: url('/images/papier/papier-machine.jpg'); background-size: cover;">
+						<h3 class="work__title">Papier Machine</h3>
+					</div>
+				</a>
+				<a href="/osmosis.html" class="work__link">
+						<div class="work__item" style="background-image: url('/images/osmosis/motion-reader.gif'); background-size: contain;">
+							<h3 class="work__title">Osmosis</h3>
+						</div>
+					</a>
+					<a href="/smithsonian.html" class="work__link">
+						<div class="work__item" style="background-color: #F8D30B; background-image: url('/images/smithsonian/smithsonian-institution.png'); background-size: contain;">
+							<h3 class="work__title">Smithsonian Institution</h3>
+						</div>
+					</a>
+			</div>
+		</section>
+		<footer id="contact" class="section contact">
 			<div class="l-constrain">
-				<div class="section-work__inner">
-					<div class="section-work__top">
-						<div class="section-work__project left" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in">
-							<div class="lines-to-bottom" data-aos="draw" data-aos-duration="1000" data-aos-delay="500"></div>
-							<h3 class="section-work__project--title"><a class="section-intro__link" href="mopop.html">Museum of Pop Culture</a></h3>
-							<span>Mobile App</span>
-							<p>Lorem ipsum dolor sit amet, oblique senserit intellegebat duo id, qui possim omittam quaerendum ei. Mea et posse postea, ex illud iudico mediocritatem cum, iudico vivendum instructior quo et. Dolorem deleniti ea est. Est ne alii honestatis.</p>
-						</div>
-						<div class="section-work__project" data-aos="fade-left">
-							<h3 class="section-work__project--title"><a class="section-intro__link" href="#">Papier Machine</a></h3>
-							<span>Official Website</span>
-							<p>Lorem ipsum dolor sit amet, oblique senserit intellegebat duo id, qui possim omittam quaerendum ei. Mea et posse postea, ex illud iudico mediocritatem cum, iudico vivendum instructior quo et. Dolorem deleniti ea est. Est ne alii honestatis. Quo et vivendo minimum necessitatibus.</p>
-						</div>
-					</div>
-					<div class="section-work__title">
-						<h2 class="section-work__text">Work and past projects</h2>
-					</div>
-					<div class="section-work__bottom">
-						<div class="section-work__project left" data-aos="fade-right">
-							<div class="lines-to-top" data-aos="draw" data-aos-duration="1000"></div>
-							<h3 class="section-work__project--title"><a class="section-intro__link" href="#">Project Hope</a></h3>
-							<span>Wordpress</span>
-							<p>Project Hope launched a company wide rebranding earlier in 2018, which prompted them to approach Forum One and task them to redesign and implement their new official website. Forum One assembled a team of 8 member to handle all aspects of the project.</p>
-						</div>
-						<div class="section-work__project" data-aos="fade-left">
-							<h3 class="section-work__project--title"><a class="section-intro__link" href="#">Colorado WIC</a></h3>
-							<span>Drupal</span>
-							<p>The Colorado Department of Public Health, Women Infant and Children is one of Forum One’s larger and more complicated projects. Part of our government work, we had to deliver a multilingual, accessible website in Drupal 8.</p>
-						</div>
-					</div>
+				<h1 class="contact__title">get in touch</h1>
+					<p class="contact__text">I'm always on the lookout for new projects. If you have an idea you'd like to share and simply want to say hi, don't hesitate to contact me.</p>
+					<ul class="menu menu--social">
+						<li class="menu__item"><a href="https://github.com/alecherryy" target="_blank" class="menu__link menu__link--github">Github</a></li>
+						<li class="menu__item"><a href="https://twitter.com/alecherryy" target="_blank" class="menu__link menu__link--twitter">Twitter</a></li>
+						<li class="menu__item"><a href="https://www.instagram.com/alecherryy/" target="_blank" class="menu__link menu__link--instagram">Instagram</a></li>
+						<li class="menu__item"><a href="https://www.linkedin.com/in/alessiapizzoccheri/" target="_blank" class="menu__link menu__link--linkedin">LinkedIn</a></li>
+						<li class="menu__item"><a href="mailto:pizzo.alexx@gmail.com" class="menu__link menu__link--email">Email</a></li>
+					</ul>
 				</div>
 			</div>
-		</section>
-		<section id="experience" class="section section-resume">
-				<div class="l-constrain">
-					<div class="section-resume__title">
-						<h2 class="section-resume__text" data-aos="fade-right">Experience
-							<span class="section-resume__eyebrow" data-aos="fade-left">Resume &</span>
-						</h2>
-					</div>
-					<div class="section-resume__inner">
-						<div class="section-resume__left">
-								<div class="lines-to-bottom" data-aos="draw" data-aos-duration="2000" data-aos-delay="500"></div>
-							<div class="section-resume__item">
-								<h3>Forum One</h3>
-								<span>Front end developer</span>
-								<p>Lorem ipsum dolor sit amet, oblique senserit intellegebat duo id, qui possim omittam quaerendum ei. Mea et posse postea, ex illud iudico mediocritatem cum, iudico vivendum instructior quo et. Dolorem deleniti ea est. Est ne alii honestatis. Quo et vivendo minimum necessitatibus. Dolorem posidonium no qui. Quo cu ocurreret vulputate mnesarchum. Sea rebum deleniti eu, sea nibh pertinacia ex. Ius dicam patrioque et, pri at dicam tollit scripta. Quod fugit intellegebat et his. Elit clita semper ius ne, ius fastidii scaevola phaedrum eu. Sit ex accusam explicari, eu enim feugait moderatius cum. Sed odio melius aliquam at, agam nostrum conceptam te per, assum erroribus eu nam. Civibus oporteat no ius, ad habemus dissentiet pro. Soleat iuvaret sententiae sea at, audire persecuti democritum pro id.									</p>
-							</div>
-							<div class="section-resume__item">
-								<h3>Northwest Folk Life</h3>
-								<span>Front end developer</span>
-								<p>Lorem ipsum dolor sit amet, oblique senserit intellegebat duo id, qui possim omittam quaerendum ei. Mea et posse postea, ex illud iudico mediocritatem cum, iudico vivendum instructior quo et. Dolorem deleniti ea est. Est ne alii honestatis. Quo et vivendo minimum necessitatibus. Dolorem posidonium no qui. Quo cu ocurreret vulputate mnesarchum. Sea rebum deleniti eu, sea nibh pertinacia ex. Ius dicam patrioque et, pri at dicam tollit scripta. Quod fugit intellegebat et his. Elit clita semper ius ne, ius fastidii scaevola phaedrum eu. Sit ex accusam explicari, eu enim feugait moderatius cum. Sed odio melius aliquam at, agam nostrum conceptam te per, assum erroribus eu nam. Civibus oporteat no ius, ad habemus dissentiet pro. Soleat iuvaret sententiae sea at, audire persecuti democritum pro id.</p>
-							</div>
-							<a class="section-resume__download--link" href="#">
-								<div class="section-resume__download pdf" data-aos="fade-right">
-								<span>Download<br>
-								pdf</span>
-								</div>
-							</a>
-						</div>
-						<div class="section-resume__right">
-						<div class="section-resume__item">
-							<h3>Lightboard, Inc</h3>
-							<span>CSS/HTML developer</span>
-							<p>Lorem ipsum dolor sit amet, oblique senserit intellegebat duo id, qui possim omittam quaerendum ei. Mea et posse postea, ex illud iudico mediocritatem cum, iudico vivendum instructior quo et. Dolorem deleniti ea est. Est ne alii honestatis. Quo et vivendo minimum necessitatibus. Dolorem posidonium no qui. Quo cu ocurreret vulputate mnesarchum. Sea rebum deleniti eu, sea nibh pertinacia ex. Ius dicam patrioque et, pri at dicam tollit scripta. Quod fugit intellegebat et his. Elit clita semper ius ne, ius fastidii scaevola phaedrum eu. Sit ex accusam explicari, eu enim feugait moderatius cum. Sed odio melius aliquam at, agam nostrum conceptam te per, assum erroribus eu nam. Civibus oporteat no ius, ad habemus dissentiet pro. Soleat iuvaret sententiae sea at, audire persecuti democritum pro id.</p>
-						</div>
-
-						<ul class="section-resume__list">
-							<li>HTML, CSS, Sass, jQuery, JavaScript, Twig, Yaml</li>
-							<li>Wordpress, Drupal, Bootstrap</li>
-						</ul>
-						<a class="section-resume__download--link" href="#">
-							<div class="section-resume__download" data-aos="fade-left">
-							<span>Download<br>
-							Resume</span>
-							</div>
-						</a>
-						</div>
-					</div>
-				</div>
-		</section>
-		<section id="contact" class="section section-contact">
-			<div class="l-constrain">
-				<div class="section-contact__inner">
-					<div class="section-contact__left">
-							<div class="lines-to-bottom contact" data-aos="draw" data-aos-duration="2000" data-aos-delay="500"></div>
-						<h2 class="section-contact__title" data-aos="fade-right">Get <br>
-							in touch</h2>
-						<p>I'm always on the lookout for new projects. If you have an idea you'd like to share and simply want to say hi, don't hesitate to contact me.</p>
-						<ul class="menu menu--social">
-							<li class="menu__item"><a href="https://github.com/alecherryy" target="_blank" class="menu__link menu__link--github">Github</a></li>
-							<li class="menu__item"><a href="https://twitter.com/alecherryy" target="_blank" class="menu__link menu__link--twitter">Twitter</a></li>
-							<li class="menu__item"><a href="https://www.instagram.com/alecherryy/" target="_blank" class="menu__link menu__link--instagram">Instagram</a></li>
-							<li class="menu__item"><a href="https://www.linkedin.com/in/alessiapizzoccheri/" target="_blank" class="menu__link menu__link--linkedin">LinkedIn</a></li>
-							<li class="menu__item"><a href="mailto:pizzo.alexx@gmail.com" class="menu__link menu__link--email">Email</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</section>
+		</footer>
 	</main>
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

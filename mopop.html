@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>alecherryy | project hope</title>
+	<title>alecherryy | mopop</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="images/favicon.ico" rel="icon">
 	<!-- fonts -->
@@ -13,65 +13,71 @@
 </head>
 
 <body>
-	<nav class="menu--mobile" style="display: none;">
-		<ul>
-			<li><a>work</a></li>
-			<li><a>about</a></li>
-			<li><a>contact</a></li>
-		</ul>
+	<nav class="menu--mobile">
+		<a href="/index.html" class="logo__link">alecherryy.</a>
+		<span class="menu__icon logo__link">menu.</span>
+		<div class="menu__wrapper">
+			<span class="menu__icon--close logo__link">close.</span>
+			<ul class="menu menu--main">
+				<li class="menu__item"><a href="/index.html#work" class="menu__link">work.</a></li>
+				<li class="menu__item"><a href="/experience.html" class="menu__link">experience.</a></li>
+				<li class="menu__item"><a href="/index.html#contact" class="menu__link">contact.</a></li>
+			</ul>
+		</div>
 	</nav>
-	<header class="l-header">
+	<div class="l-header__wrapper">
+		<header class="l-header">
+		<a href="/index.html" class="logo__link">alecherryy.</a>
 		<ul class="menu menu--main">
-			<li class="menu__item"><a href="index.html#work" class="menu__link">work.</a></li>
-			<li class="menu__item"><a href="index.html#experience" class="menu__link">experience.</a></li>
-			<li class="menu__item"><a href="index.html#contact" class="menu__link">contact.</a></li>
-		</ul>
-		<ul class="menu menu--utility">
-			<li class="menu__item"><a href="mopop.html" class="menu__link">next project.</a></li>
+			<li class="menu__item"><a href="/index.html#work" class="menu__link">work.</a></li>
+			<li class="menu__item"><a href="/index.html#experience" class="menu__link">experience.</a></li>
+			<li class="menu__item"><a href="/index.html#contact" class="menu__link">contact.</a></li>
 		</ul>
 	</header>
+	</div>
 	<main>
-		<section class="section section-project">
+		<section class="section intro">
 			<div class="l-constrain">
-				<h1 class="section-project__title">mopop</h1>
-				<div class="section-project__subtitle">
-					<h2 class="section-project__text">Mobile app design</h2>
-				</div>
-				<div class="section-project__image">
-					<div class="section-project__image--inner">
-						<img src="/images/mopop/feature-img.png">
-					</div>
-				</div>
-				<div class="section-project__content">
-					<p><span class="first-letter">P</span>roject Hope is an NGO providing medical relief and health services to disaster areas, they are a world wide organization who has trained over 2 million health workers over the course of 60 years. The goal of this project was to provide the client with a new, modern, responsive website to better represent Project Hope’s new branding. At Forum One, we decided the best solution was to provide them with a new wordpress website, tailored to their organization’s needs. That included a new and slick user interface, a colorful and eye catching design that still maintains a sense of gravity and importance. We wanted to place weight and significance to their imagery, which is why we assigned large, high-res featured images to their main curated content.</p>
-					<p>The site was developed with a “mobile first” approach. It’s designed to enhance gracefully over screen sizes and deliver to users the same experienced regardless of the device on which the website is accessed.
-					</p>
-					<p>At Forum One, we base all our website off a universal, mobile first, responsive theme, developed to work both in Drupal and Wordpress. Our theme, “Gesso”, is customized and modify to suit the projects need first on our local environment, and is then implemented onto the our CMS of choice. To facilitate our workflow, Gesso is implemented with Twig, a php templating language used to build custom pages and websites for Drupal (primarily) and Wordpress. Following the pattern design principles to establish our workflow. <span class="text-large">Upon receiving the approved design, I broke down each page into <span class="text-large copper">components - the smallest and reusable elements within the design, regions, layouts and pages.</span> To facilitate the process, I also abide to the BEM naming conventions, to make blocks reusable and modular. </span> To build the front end, I first turned the designs into responsive web pages in Pattern Lab, our tool to display and test all front end related builds before they are implemented onto the CMS. By doing so, I can develop and test each component, region, layout and page within a separate and independent environment; address any design changes the client might have requested and spot any issues that need resolved before diving into implementation with the back end. 
-					</p>
+				<h1 class="intro__title">museum of pop culture</h1>
+				<h2 class="intro__subtitle">project proposal</h2>
+				<p class="intro__text">The Museum Of Pop Culture (or MoPop), formally known as EMP Museum, is one of Seattle’s best-known museums.
+				Located at Seattle Center nearby the Space Needle, the
+				MoPop is a leading-edge nonprofit museum, dedicated to the
+				ideas and risk-taking that fuel contemporary popular culture.
+				It was founded by Microsoft co-founder Paul Allen in 2000
+				as the Experience Music Project, a name that was retained
+				until November 2016, when the museum was rebranded into
+				today’s Museum Of Pop Culture, or MoPop.</p>
+				<div class="project__link" style="margin-top: 4em;">
+					<a class="project__link--link" href="/images/mopop/Museum-of-Pop-Culture.pdf" target="_blank">download the proposal</a>
 				</div>
 			</div>
 		</section>
-		<section class="section section-images">
-			<div>
-			<div class="l-constrain">
-				<div class="section-images__image">
-					<img src="/images/mopop/Site-map.jpg" style="box-shadow: none">
-				</div>
-				<div class="section-images__image">
-					<img src="/images/mopop/wireframes.jpg" style="box-shadow: none">
-				</div>
-				<div class="section-images__image">
-					<img src="/images/mopop/interface-one.png" style="box-shadow: none">
-				</div>
-			</div>
-			</div>
-			<div class="project__item">
-				<div class="project__item--inner">
-					<a href="images/mopop/Museum-of-Pop-Culture.pdf" class="project__link" target="_blank">download case study.</a>
+		<section id="work" class="section project">
+			<div class="project__inner">
+				<div class="project-img">
+					<img alt="project hope country page" src="/images/mopop/feature-img.png">
+					<img alt="project hope filter page" src="/images/mopop/interface-one.png">
+					<div class="project__link next--project" style="margin-top: 4em;">
+							<a class="project__link--link" href="/coloradowic.html">next project</a>
+						</div>
 				</div>
 			</div>
 		</section>
-		
+		<footer id="contact" class="section contact">
+			<div class="l-constrain">
+				<h1 class="contact__title">get in touch</h1>
+					<p class="contact__text">I'm always on the lookout for new projects. If you have an idea you'd like to share and simply want to say hi, don't hesitate to contact me.</p>
+					<ul class="menu menu--social">
+						<li class="menu__item"><a href="https://github.com/alecherryy" target="_blank" class="menu__link menu__link--github">Github</a></li>
+						<li class="menu__item"><a href="https://twitter.com/alecherryy" target="_blank" class="menu__link menu__link--twitter">Twitter</a></li>
+						<li class="menu__item"><a href="https://www.instagram.com/alecherryy/" target="_blank" class="menu__link menu__link--instagram">Instagram</a></li>
+						<li class="menu__item"><a href="https://www.linkedin.com/in/alessiapizzoccheri/" target="_blank" class="menu__link menu__link--linkedin">LinkedIn</a></li>
+						<li class="menu__item"><a href="mailto:pizzo.alexx@gmail.com" class="menu__link menu__link--email">Email</a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
 	</main>
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

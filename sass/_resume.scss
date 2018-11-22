@@ -1,0 +1,162 @@
+// section resume
+.resume {
+  background-color: $pink-light;
+  color: $blue;
+  padding: 0 1em 2em 1em;
+
+  @media only screen and (min-width: 700px) {
+    padding: 10em 0 3em;
+  }
+}
+
+.resume__inner {
+  display: block;
+  padding: 4em 0;
+
+  @media only screen and (min-width: 700px) {
+    display: flex;
+    max-width: 900px;
+  }
+}
+
+.resume__left,
+.resume__right {
+  margin: 0 .5em;
+  padding: 0 .5em;
+
+  @media only screen and (min-width: 700px) {
+    flex-basis: 60%;
+    padding: 0 1em;
+  }
+}
+
+.resume__left {
+  position: relative;
+}
+
+.resume__item {
+  margin: 0 .5em;
+  padding: 2em 0;
+
+  h3 {
+    font-family: $font-family-base;
+    font-size: ms(0);
+  }
+
+  span {
+    color: $pink-dark;
+    font-size: ms(0);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  p {
+    font-size: ms(0);
+    font-weight: 300;
+    line-height: ms(1);
+    margin-top: 1em;
+  }
+}
+
+.resume__item--edu {
+  span {
+    color: $offwhite;
+    text-transform: none;
+  }
+
+  p {
+    margin-top: 0;
+  }
+}
+
+.resume__text {
+  display: inline-block;
+  color: #DDC8C4;
+  font-size: ms(6);
+  position: relative;
+  
+  @media only screen and (min-width: 700px) {
+    font-size: ms(7);
+  }
+
+  @media only screen and (min-width: 900px) {
+    font-size: ms(8);
+  }
+
+  @media only screen and (min-width: 1100px) {
+    font-size: ms(9);
+  }
+}
+
+.resume__eyebrow {
+  color: #fff;
+  display: inline-block;
+  font-size: ms(3);
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  @media only screen and (min-width: 700px) {
+    font-size: ms(4);
+  }
+
+  @media only screen and (min-width: 900px) {
+    font-size: ms(5);
+  }
+
+  @media only screen and (min-width: 1100px) {
+    font-size: ms(6);
+  }
+}
+
+.resume__download--link {
+  color: $blue;
+  display: inline-block;
+  font-size: ms(0);
+  font-weight: 700;
+  padding-right: 60px;
+  position: relative;
+  text-decoration: none;
+
+  &:after {
+    content: '';
+    background-color: $blue;
+    height: 1px;
+    position: absolute;
+    right: 0;
+    width: 50px;
+    top: 12px;
+    transition: all .2s ease-in-out;
+  }
+
+  &:hover,
+  &:focus {
+    &:after {
+      width: 100%;
+    }
+  }
+}
+
+.resume__list {
+  font-family: $font-family-base;
+  font-size: ms(2);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    padding: .25em 0 .25em 1em;
+    position: relative;
+
+    &:before {
+      content: '';
+      background-color: $copper;
+      height: 10px;
+      left: 0em;
+      position: absolute;
+      top: 18px;
+      width: 10px;
+    }
+  }
+}
