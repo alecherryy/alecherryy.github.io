@@ -13,7 +13,17 @@ $(document).ready(function() {
     $('.menu--mobile .menu__wrapper').slideUp();
   });
 
+  // // smooth scrolling
+  // var scrollLink = $('.menu__link');
+  
+  // scrollLink.click(function(e) {
+  //   e.preventDefault();
+  // $('body,html').animate({
+  //   scrollTop: $(this.hash).offset().top }, 1000)
+  // })
+
   var pageScrolled = false;
+  
   $(window).scroll(function() {
     var theheight = $('.l-header').css('height');
     if ($(this).scrollTop() > 150) {
